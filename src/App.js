@@ -1,35 +1,8 @@
 import logo from './logo.svg';
+import Person from './components/Person'
 import './App.css';
 
 //THIS IS FUNDEMANTAL COMPONENT EXAMPLE
-
-const Email = (props) => {
-  return (
-    <div class="linkCont">
-      <a href={props.email}>{props.email}</a>
-    </div>
-  )
-}
-
-const Pet = (props) => {
-  return (
-    <div class="personCont">
-      <h2>My pet's name is {props.petName}</h2>
-    </div>
-  )
-}
-
-
-const Person = (props) => {
-  return (
-    <div class="personCont">
-      <h2>My name is {props.name} and I am {props.age} year(s) old.</h2>
-      <Pet petName = {props.petName} />
-      <Email email ={props.email} />
-    </div>
-  )
-}
-
 
 function App() {
   return (
